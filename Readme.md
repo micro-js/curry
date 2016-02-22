@@ -17,6 +17,14 @@ A simple curry implementation
 ```js
 var curry = require('@f/curry')
 
+var add = curry(function (a, b, c) {
+  return a + b + c
+})
+
+var addToOne = add(1)
+var addToTwo = add(1)
+addToTwo(1) // => 3
+
 ```
 
 ## API
@@ -25,7 +33,7 @@ var curry = require('@f/curry')
 
 - `fn` - function to curry
 
-**Returns:**
+**Returns:** curried partial of `fn` - which will itself return a curried partial... and so on, until the number of arguments expected by `fn` have been supplied.
 
 ## License
 
