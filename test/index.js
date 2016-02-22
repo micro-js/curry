@@ -10,7 +10,6 @@ var test = require('tape')
  */
 
 test('should curry fn recursively', function (t) {
-
   t.equal(curry(add)(1)(1)(1), 3)
   t.equal(curry(add)(1)(1, 1), 3)
   t.equal(curry(add)(1, 1)(1), 3)
@@ -25,11 +24,10 @@ test('should curry fn recursively', function (t) {
 })
 
 test('should invoke fn immediately if approriate', function (t) {
-
   t.equal(curry(add)(1, 1, 1), 3)
   t.end()
 })
 
-function add(a, b, c) {
+function add (a, b, c) {
   return a + b + c
 }

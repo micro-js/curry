@@ -6,7 +6,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-A simple curry implementation
+A simple recursive curry implementation.
 
 ## Installation
 
