@@ -21,9 +21,9 @@ var curry = require('@f/curry')
 
 ## API
 
-### curry(arg)
+### curry(fn)
 
-- `arg` -
+- `fn` - function to curry
 
 **Returns:**
 
